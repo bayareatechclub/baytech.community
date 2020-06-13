@@ -88,7 +88,12 @@
       </p>
     </div>
     <div class="photo-credit">Photo by <a href="https://unsplash.com/@tomminseteli">Tommi Selander</a> on Unsplash</div>
-</footer>
+  </footer>
 
+  <script type="text/javascript">
+    let setVH = () => document.documentElement.style.setProperty('--vh', `${window.innerHeight * 0.01}px`);
+    window.addEventListener('resize', setVH);
+    setVH();
+  </script>
 </body>
 </html>

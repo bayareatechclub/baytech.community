@@ -51,7 +51,8 @@ body {
 /* Mobile viewport sizing workaround -- https://css-tricks.com/the-trick-to-viewport-units-on-mobile/ */
 html {
   background-size: auto 100vh;
-  background-size: auto calc(var(--vh, 1vh) * 100);
+  /*causes scrolling issues (e.g. in landscape mode) and the background cropping is not an issue */
+  /*background-size: auto calc(var(--vh, 1vh) * 100);*/
 }
 
 body {

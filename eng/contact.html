@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>Contact – Bay Area Tech Club</title>
   <link rel="canonical" href="https://baytech.community/eng/" />
   <link rel="stylesheet" href="/assets/style.css">
@@ -66,7 +68,12 @@
       </p>
     </div>
     <div class="photo-credit">Photo by <a href="https://unsplash.com/@tomminseteli">Tommi Selander</a> on Unsplash</div>
-</footer>
+  </footer>
 
+  <script type="text/javascript">
+    let setVH = () => document.documentElement.style.setProperty('--vh', `${window.innerHeight * 0.01}px`);
+    window.addEventListener('resize', setVH);
+    setVH();
+  </script>
 </body>
 </html>

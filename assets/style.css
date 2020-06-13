@@ -33,7 +33,7 @@ html, body, p { margin: 0; padding: 0; }
 
 /* https://css-tricks.com/simplified-fluid-typography/ */
 html {
-  font-size: calc(12px + .5vw);
+  font-size: calc(.67em + .6vw);
   background-image: url('/assets/tommi-selander-baytech-v2.jpg');
   background-position: center;
   background-size: auto 100vh;
@@ -53,13 +53,13 @@ body {
 body {
   display: flex;
   flex-direction: column;
-  min-width: 30rem;
+  min-width: 28rem;
 }
 
 
 header {
 	display: flex;
-  margin: 1rem;
+  margin: .6rem;
 }
 
 header img {
@@ -79,7 +79,7 @@ header a[href]:hover, header a:active, header a:focus {
 }
 
 nav {
-  font-size: 2rem;
+  font-size: 1.8rem;
   height: 4rem;
   display: flex;
   justify-content: space-evenly;
@@ -92,7 +92,6 @@ nav > * {
 
 .langswitcher {
   font-size: 1.4rem;
-  line-height: 1.3rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -109,16 +108,17 @@ html[lang="ru"] .langswitcher>.ru
 
 footer {
   color: white;
-  background-color: rgba(0,0,60,.4);
+  background-color: rgba(0,0,60,.5);
+  text-shadow: .1em .1em .2em black;
 
   font-size: 1rem;
   display: flex;
-  margin: 1rem auto 0;
+  margin: .6rem auto 0;
 }
 footer > * {
-  flex: 0;
-  flex-basis: 16rem;
-  margin: 1rem;
+  flex: 30%;
+
+  margin: .8rem;
 }
 
 footer a {
@@ -146,8 +146,8 @@ main > * {
 main > .content {
   background-color: rgba(255,255,255,.8);
   flex-basis: 48rem;
-  padding: 2rem;
-  margin: 2rem;
+  padding: 1.6rem;
+  margin: 1rem;
 }
 
 main p:not(:last-child) {

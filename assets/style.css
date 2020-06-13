@@ -1,0 +1,205 @@
+/* roboto-condensed-300 - latin-ext_latin_cyrillic */
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Roboto Condensed Light'), local('RobotoCondensed-Light'),
+       url('/fonts/roboto-condensed-v18-latin-ext_latin_cyrillic-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('/fonts/roboto-condensed-v18-latin-ext_latin_cyrillic-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-condensed-300italic - latin-ext_latin_cyrillic */
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: italic;
+  font-weight: normal;
+  src: local('Roboto Condensed Light Italic'), local('RobotoCondensed-LightItalic'),
+       url('/fonts/roboto-condensed-v18-latin-ext_latin_cyrillic-300italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('/fonts/roboto-condensed-v18-latin-ext_latin_cyrillic-300italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-condensed-700 - latin-ext_latin_cyrillic */
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: bold;
+  src: local('Roboto Condensed Bold'), local('RobotoCondensed-Bold'),
+       url('/fonts/roboto-condensed-v18-latin-ext_latin_cyrillic-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('/fonts/roboto-condensed-v18-latin-ext_latin_cyrillic-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+* { box-sizing: border-box; }
+html, body, p { margin: 0; padding: 0; }
+
+/* https://css-tricks.com/simplified-fluid-typography/ */
+html {
+  font-size: calc(12px + .5vw);
+  background-image: url('/assets/tommi-selander-baytech-v2.jpg');
+  background-position: center;
+  background-size: auto 100vh;
+  background-repeat: repeat-x;
+  background-attachment: fixed;
+}
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  min-height: 100vh;
+
+  max-width: 48rem;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-width: 30rem;
+}
+
+
+header {
+	display: flex;
+  margin: 1rem;
+}
+
+header img {
+  height: 4rem;
+  width: 4rem;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+  flex: 0;
+  text-align: center;
+  font-weight: bold;
+}
+header a[href]:hover, header a:active, header a:focus {
+  color: #46c;
+}
+
+nav {
+  font-size: 2rem;
+  height: 4rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-grow: 1;
+  margin: 0;
+}
+nav > * {
+}
+
+.langswitcher {
+  font-size: 1.4rem;
+  line-height: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+}
+html[lang="en"] .langswitcher>.en,
+html[lang="ee"] .langswitcher>.ee,
+html[lang="ru"] .langswitcher>.ru
+{
+  display: none;
+}
+
+
+footer {
+  color: white;
+  background-color: rgba(0,0,60,.4);
+
+  font-size: 1rem;
+  display: flex;
+  margin: 1rem auto 0;
+}
+footer > * {
+  flex: 0;
+  flex-basis: 16rem;
+  margin: 1rem;
+}
+
+footer a {
+  color: aliceblue;
+}
+
+.license img {
+  height:22px !important;
+  margin-left: 3px;
+  vertical-align: text-bottom;
+}
+
+
+main {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main > * {
+  font-size: 1.4rem;
+}
+
+main > .content {
+  background-color: rgba(255,255,255,.8);
+  flex-basis: 48rem;
+  padding: 2rem;
+  margin: 2rem;
+}
+
+main p:not(:last-child) {
+  margin-bottom: .66em;
+}
+
+main > .blocks {
+  display: flex;
+  list-style-type: none;
+  margin:0;
+  padding: 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.blocks > * {
+  display: block;
+  background-color: rgba(255,255,255,.8);
+}
+
+.blocks a,
+.blocks a > * {
+  display: block;
+  color: black;
+  text-decoration: none;
+  margin-bottom: .4em;
+}
+
+.blocks img {
+  border-radius: 50%;
+  margin: 1rem auto;
+  width: 80%;
+  max-width: 16rem;
+}
+.blocks strong {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.project {
+  margin: 1rem;
+  padding: 2rem;
+  flex-basis: 16rem;
+  flex-grow: 1;
+}
+
+.contact {
+  margin: .5rem;
+  padding: 1rem;
+  flex: 30% 1 0;
+}
+
+.contact strong {
+  font-size: 1.2rem;
+}

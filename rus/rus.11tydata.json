@@ -1,5 +1,13 @@
 {
   "layout": "base",
   "lang": "rus",
-  "shortlang": "ru"
+  "shortlang": "ru",
+
+  "l10n": {
+    "header": {
+      "about": "О нас",
+      "projects": "Проекты",
+      "contact": "Контакт"
+    }
+  }
 }

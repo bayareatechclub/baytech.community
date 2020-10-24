@@ -1,9 +1,9 @@
 <header>
   <img class="logo" alt="Bay Area Tech Club logo" src="/img/baytech-logo.png" />
   <nav>
-    <a href="/eng/">About</a>
-    <a href="/eng/projects">Projects</a>
-    <a href="/eng/contact">Contact</a>
+    <a href="/{{ lang }}/">{{ l10n.header.about or 'About' }}</a>
+    <a {% if paths[lang].projects %}href="/{{ lang }}/{{ paths[lang].projects }}"{% endif %}>{{ l10n.header.projects or 'Projects' }}</a>
+    <a {% if paths[lang].contact  %}href="/{{ lang }}/{{ paths[lang].contact  }}"{% endif %}>{{ l10n.header.contact or 'Contact' }}</a>
   </nav>
   <span class="langswitcher">
     <a class="en"

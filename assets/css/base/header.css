@@ -13,6 +13,7 @@ header {
     flex: 0;
     text-align: center;
     font-weight: bold;
+    white-space: nowrap;
 
     /* active states */
     &[href]:hover,
@@ -20,6 +21,11 @@ header {
     &:focus
     {
       color: #46c;
+    }
+
+    &:not([href]) {
+      opacity: .3;
+      cursor: not-allowed;
     }
   }
 

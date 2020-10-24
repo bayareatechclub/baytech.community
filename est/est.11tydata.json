@@ -1,5 +1,13 @@
 {
   "layout": "base",
   "lang": "est",
-  "shortlang": "et"
+  "shortlang": "et",
+
+  "l10n": {
+    "header": {
+      "about": "Meist",
+      "projects": "Projektid",
+      "contact": "Kontaktid"
+    }
+  }
 }

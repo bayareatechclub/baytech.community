@@ -44,7 +44,7 @@ header {
     width: 4rem;
 
     html[lang="en"] &>.en,
-    html[lang="ee"] &>.ee,
+    html[lang="et"] &>.et,
     html[lang="ru"] &>.ru
     {
       display: none;

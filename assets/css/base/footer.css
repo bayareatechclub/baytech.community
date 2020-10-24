@@ -1,0 +1,24 @@
+footer {
+  color: white;
+  background-color: rgba(0,0,60,.5);
+  text-shadow: .1em .1em .2em black;
+
+  font-size: 1rem;
+  display: flex;
+  margin: .6rem auto 0;
+}
+footer > * {
+  flex: 30%;
+
+  margin: .8rem;
+}
+
+footer a {
+  color: aliceblue;
+}
+
+.license img {
+  height:22px !important;
+  margin-left: 3px;
+  vertical-align: text-bottom;
+}

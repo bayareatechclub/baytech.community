@@ -1,0 +1,32 @@
+main > .blocks {
+  display: flex;
+  list-style-type: none;
+  margin:0;
+  padding: 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.blocks > * {
+  display: block;
+  background-color: rgba(255,255,255,.8);
+}
+
+.blocks a,
+.blocks a > * {
+  display: block;
+  color: black;
+  text-decoration: none;
+  margin-bottom: .4em;
+}
+
+.blocks img {
+  border-radius: 50%;
+  margin: 1rem auto;
+  width: 80%;
+  max-width: 16rem;
+}
+.blocks strong {
+  text-align: center;
+  font-size: 2rem;
+}

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="{{ lang }}">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>{{ title or metadata.title }}</title>
+  <meta name="description" content="{{ description or metadata.description }}">
+  <meta name="keywords" content="{{ keywords or metadata.keywords }}">
+
+  <link rel="canonical" href="{{ metadata.canonical_url or metadata.url }}">
+
+  <link rel="stylesheet" href="{{ '/css/style.css' | url }}">
+
+{% if metadata.image.large %}<meta name="twitter:card" content="summary_large_image">
+{% else %}<meta name="twitter:card" content="summary">
+{% endif %}
+  <meta name="twitter:site" content="{{ twitter.username }}">
+  <meta name="twitter:title" content="{{ title or metadata.title }}">
+  <meta name="twitter:description" content="{{ description or metadata.description }}">
+
+{% if metadata.image %}
+  <meta name="twitter:image" content="{{ metadata.image.src | fullUrl }}">
+  <meta name="twitter:image:alt" content="{{ metadata.image.alt }}">
+{% endif %}
+
+{# Web Monetization default payment pointer - https://webmonetization.org/docs/ #}
+{% if metadata.webmonetization.pointer %}<meta name="monetization" content="{{metadata.webmonetization.pointer}}">{% endif %}
+
+{% if metadata.og %}
+<meta property="og:site_name" content="{{ metadata.title }}" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="{{ og.url or url or metadata.url }}" />
+
+<meta property="og:title" content="{{ og.title or title or metadata.title }}" />
+<meta property="og:description" content="{{ og.description or description or metadata.description }}" />
+<meta property="og:image" content="{{ og.image.src }}" />
+{% endif %}
+
+{% if metadata.icons %}
+{% for i in metadata.icons %}<link rel="{{i.rel}}" type="{{i.type}}" sizes="{{i.size}}" href="{{i.url}}">{% endfor %}
+{% endif %}
+</head>
+
+<body>
+
+{% include 'header.njk' %}
+
+<main{% if mainClass %} class="{{ mainClass }}"{% endif %}>
+  {{ content | safe }}
+</main>
+
+{% include 'footer.njk' %}
+
+<script type="text/javascript">
+  let setVH = () => document.documentElement.style.setProperty('--vh', `${window.innerHeight * 0.01}px`);
+  window.addEventListener('resize', setVH);
+  setVH();
+</script>
+
+</body>
+
+
+</html>

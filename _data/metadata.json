@@ -1,0 +1,46 @@
+{
+  "title": "Bay Area Tech Club",
+  "url": "https://baytech.community",
+  "canonical_url": "https://baytech.community/eng/",
+  "description": "Bay Area Tech Club is an Estonian non-profit association created to help tech communities connect, educate and share their passions.",
+  "keywords": "bay are tech club, baytech, non-profit, association, estonia, community",
+  "author": {
+    "name": "Bay Area Tech Club",
+    "email": "contact@rustfest.global",
+    "url": "https://baytech.community/"
+  },
+  "twitter": {
+    "username": "@bayareatechclub",
+    "image": {
+      "src": "https://baytech.community/assets/baytech256.png",
+      "alt": "Bay Area Tech Club logo"
+    }
+  },
+  "og": {
+    "image": {
+      "src": "https://baytech.community/assets/baytech256.png",
+      "alt": "Bay Area Tech Club logo"
+    }
+  },
+  "webmonetization": {
+    "pointer": "$ilp.uphold.com/2YdXerkKdULj"
+  },
+  "icons": [
+    {
+      "rel": "apple-touch-icon",
+      "type": "image/png",
+      "size": "180x180",
+      "url": "/apple-touch-icon.png"
+    },{
+      "rel": "icon",
+      "type": "image/png",
+      "size": "32x32",
+      "url": "/favicon-32x32.png"
+    },{
+      "rel": "icon",
+      "type": "image/png",
+      "size": "16x16",
+      "url": "/favicon-16x16.png"
+    }
+  ]
+}

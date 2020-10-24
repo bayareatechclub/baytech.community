@@ -1,0 +1,50 @@
+/* Resets & defaults */
+* {
+  box-sizing: border-box;
+}
+
+html, body, p {
+  margin: 0; padding: 0;
+}
+
+
+/* https://css-tricks.com/simplified-fluid-typography/ */
+html {
+  font-size: calc(.67em + .6vw);
+  background-image: url('/img/tommi-selander-baytech-v2.jpg');
+  background-position: center;
+  background-repeat: repeat-x;
+  background-attachment: fixed;
+
+  /* Mobile viewport sizing workaround -- https://css-tricks.com/the-trick-to-viewport-units-on-mobile/ */
+  background-size: auto 100vh;
+  /*causes scrolling issues (e.g. in landscape mode) and the background cropping is not an issue */
+  /*background-size: auto calc(var(--vh, 1vh) * 100);*/
+}
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+
+  max-width: 48rem;
+	margin: 0 auto;
+
+  /* ... */
+  min-height: 100vh;
+  min-height: calc(var(--vh, 1vh) * 100);
+
+  /* Layout */
+  display: flex;
+  flex-direction: column;
+  min-width: 28rem;
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+ * {
+    font-size: 1.4rem;
+  }
+}

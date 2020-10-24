@@ -1,0 +1,10 @@
+main > .content {
+  background-color: rgba(255,255,255,.8);
+  flex-basis: 48rem;
+  padding: 1.6rem;
+  margin: 1rem;
+}
+
+main p:not(:last-child) {
+  margin-bottom: .66em;
+}

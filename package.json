@@ -1,0 +1,29 @@
+{
+  "name": "baytech.community",
+  "version": "1.0.0",
+  "description": "Bay Area Tech Club website",
+  "main": "index.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "npm run build:css && eleventy",
+    "build:css": "postcss-generate"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bayareatechclub/baytech.community.git"
+  },
+  "author": "Flaki <git@flaki.hu>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/bayareatechclub/baytech.community/issues"
+  },
+  "homepage": "https://github.com/bayareatechclub/baytech.community#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.1",
+    "autoprefixer": "^10.0.1",
+    "cssnano": "^4.1.10",
+    "eleventy-plugin-sourcemapped-postcss": "^0.0.3",
+    "postcss": "^8.1.4",
+    "postcss-nested": "^5.0.1"
+  }
+}

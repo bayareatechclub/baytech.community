@@ -1,0 +1,9 @@
+.contact {
+  margin: .5rem;
+  padding: 1rem;
+  flex: 30% 1 0;
+
+  strong {
+    font-size: 1.2rem;
+  }
+}

@@ -1,0 +1,6 @@
+.project {
+  margin: 1rem;
+  padding: 2rem;
+  flex-basis: 16rem;
+  flex-grow: 1;
+}

@@ -1,0 +1,20 @@
+
+/* style.css | https://baytech.community/css/style.css */
+
+.project {
+  /* padding: 2rem; */
+  /* margin: 1rem; */
+  /* flex-basis: 16rem; */
+  padding: 0 1rem 1rem;
+  flex-basis: 14rem;
+  text-align: center;
+}
+
+main > .blocks {
+  gap: 1rem;
+}
+
+.blocks strong {
+  /* font-size: 2rem; */
+  font-size: 1.6rem;
+}
